@@ -1,0 +1,278 @@
+/* ================================= 
+  Base Styles
+==================================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Big Shoulders Display", sans-serif;
+    line-height: 1.6em
+}
+
+.main-nav {
+    list-style: none;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: black;
+    margin: 20px 20px;
+    background-color: white;
+    padding: 10px 10px;
+    text-align: center;
+    display: block;
+}
+
+.top {
+    width: 100%;
+}
+
+.mypic {
+    width: 100%;
+}
+
+.main-header,
+.intro {
+    color: black;
+}
+
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+.top {
+    text-align: center;
+    background: rgb(184, 129, 129);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/* ---- Layout Containers ---- */
+
+.secname {
+    text-align: center;
+}
+
+.col {
+    text-align: center;
+    width: 100%;
+    padding: 5% 5%;
+    color: rgb(70, 66, 66);
+}
+
+.pic1 {
+    width:100%;
+}
+
+.search {
+    width:100%;
+}
+
+.travel {
+    width:100%;
+}
+
+.map {
+    width:100%;
+}
+
+.photos {
+    width:100%;
+}
+
+.calculator {
+    width:100%;
+}
+
+.ethos {
+    background-color: bisque;
+    padding: 25px 25px;
+    display: block;
+    text-align: center;
+}
+
+.student {
+    width: 100%;
+}
+
+.ahold {
+    border-bottom: 2px solid lightgrey;
+}
+
+.ahold a {
+    text-decoration: none;
+}
+
+.bottoms {
+    display: inline-block;
+    background: rgb(245, 239, 239);
+    text-align: center;
+    padding-top: 15px;
+    width: 100%;
+    padding-bottom: 15px;
+    color: black;
+    text-decoration: none;
+}
+
+.bottom2 {
+    display: none;
+}
+
+.leftside {
+    float: left;
+    padding: 15px;
+}
+
+.totop {
+    float: right;
+    padding-top: 15px;
+    padding-right: 15px;
+}
+
+.totop a {
+    text-decoration: none;
+    color: black;
+}
+
+/*----media queries----
+------------------------*/
+
+@media (min-width:768px) {
+    .container {
+		width: 85%;
+		margin: 0 auto;
+    }
+
+    .main-nav {
+        text-align: center;
+    }
+
+    .main-nav a {
+        background: none;
+        display: inline-block;
+    }
+
+    .intro {
+        float: left;
+        width: 48%;
+    }
+
+    .mypic {
+        float: right;
+        width: 48%;
+    }
+
+    .one,
+    .three,
+    .five {
+        float: left;
+        width: 48%;
+    }
+
+    .two,
+    .four,
+    .six {
+        float: right;
+        width: 48%;
+    }
+
+    .student {
+        float: left;
+        width: 48%;
+        margin-top: 25px;   
+    }
+
+    .skills {
+        float: right;
+        width: 48%;
+    }
+
+    .bottom1 {
+        display: none;
+    }
+
+    .bottom2 {
+        display: block;
+        background: rgb(245, 239, 239);
+        text-align: center;
+        padding-top: 15px;
+        width: 100%;
+        padding-bottom: 15px;
+        color: black;
+        text-decoration: none;
+    }
+    
+    .main-nav2 {
+        list-style: none;
+        float: right;
+    }
+
+    .main-nav2 a {
+        text-decoration: none;
+        color: black;
+        margin: 25px 25px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-align: center;
+        display: inline-block;
+    }
+    
+    .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+
+
+@media (min-width:1024px) {
+    
+    .name {
+        float: left;
+        margin: 50px;
+    }
+    .main-nav {
+        float: right;
+        margin-right: 40px;
+        margin-top: 25px;
+    }
+
+    .secname {
+        padding-top: 25px;
+    }
+
+    .intro,
+    .secname {
+        font-size: 1.5em;
+    }
+
+    .intro {
+        padding-top: 100px;
+    }
+
+    .one,
+    .four {
+        float: left;
+        width: 33%;
+    }
+
+    .two,
+    .five {
+        float: right;
+        width: 33%;
+    }
+
+    .three,
+    .six {
+        float: right;
+        width:33%;
+    }
+
+    .skills {
+        margin-top: 150px;
+    }
+}
